@@ -20,20 +20,12 @@ body {
 
  .topNavBar {
     overflow: hidden;
+    background-color: gray;
+    opacity: 0.8;
   }
   /*aligning navigation bar to the right*/
   .navAlign{
     float:right;
-  }
-
-  .topNavBar p {
-    float:left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
   }
 
  .topNavBar a {
@@ -41,10 +33,15 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     font-size: 17px;
   }
+
+.topNavBar a .brand{
+  color:black;
+  opacity:0.8;
+}
   
  .topNavBar a:hover {
     background-color: #ddd;
@@ -53,6 +50,8 @@ body {
   
   .topNavBar a.active {
     color: black;
+    background-color:#f5f5dc;
+    opacity: 0.8;
   }
   
   .topNavBar .icon {
