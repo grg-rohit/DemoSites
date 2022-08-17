@@ -5,11 +5,11 @@ body {
 }
 
 .homeTop{
+    width:100%;
+    height:50%;
     background: url("https://thumbs.dreamstime.com/b/scenic-view-moraine-lake-mountain-range-sunset-landscape-canadian-rocky-mountains-49666349.jpg");
     background-repeat: no-repeat center;
     background-size: cover;
-    width:100%;
-    height:50%;
     color:#fff;
     min-height:500px;
     font-family:sans-serif;
@@ -92,3 +92,8 @@ body {
     width: 50%;
     padding: 10px;
   }
+
+.headLow{
+  padding: 5px 10px;
+  background-color: #FBAE5E;
+}
