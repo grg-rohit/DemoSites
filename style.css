@@ -1,0 +1,95 @@
+/*styling body*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homeTop{
+    background: url("https://thumbs.dreamstime.com/b/scenic-view-moraine-lake-mountain-range-sunset-landscape-canadian-rocky-mountains-49666349.jpg");
+    background-repeat: no-repeat center;
+    background-size: cover;
+    width:100%;
+    height:50%;
+    color:#fff;
+    min-height:500px;
+    font-family:sans-serif;
+}
+  
+/*styling navigation bar*/
+
+
+ .topNavBar {
+    overflow: hidden;
+  }
+  /*aligning navigation bar to the right*/
+  .navAlign{
+    float:right;
+  }
+
+  .topNavBar p {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+ .topNavBar a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+ .topNavBar a:hover {
+    background-color: #ddd;
+    color: yellow;
+  }
+  
+  .topNavBar a.active {
+    color: black;
+  }
+  
+  .topNavBar .icon {
+    display: none;
+  }
+  /*
+  hide all links, except for "HOME' when width<600px
+  */
+  @media screen and (max-width: 600px) {
+    /*select every element which is not first-child of irs parent element*/
+    .topNavBar a:not(:first-child) {display: none;}
+    .topNavBar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  /*
+  on user click to icon add "responsive class"
+  Show the link that contains should open and close the topNavBar (.icon)
+  */
+  @media screen and (max-width: 600px) {
+    .topNavBar.responsive {position: relative;}
+    .topNavBar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topNavBar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
